@@ -27,7 +27,7 @@ a {
 }
 @font-face {
     font-family: 'Regular';
-    src: url(poppins/Poppins-Regular.ttf);
+    src: url(./poppins/Poppins-Regular.ttf);
 }
 :root {
     --black: #000000;
