@@ -1,0 +1,35 @@
+html *{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'Regular';
+    color: var(--white);
+    font-size: 48px;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(poppins/Poppins-Regular.ttf);
+}
+:root {
+    --black: #000000;
+    --white: #ffffff;
+}
