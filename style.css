@@ -1,56 +1,100 @@
+:root {
+  --black: #000000;
+  --white: #f0f0f0;
+}
+
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
   user-select: none;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--black);
-}
-
-h1,
-h2 {
-  font-family: "Regular";
-  text-align: center;
-  color: var(--white);
-  margin: 0;
-}
-
-h1 {
-  font-size: 62px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h1 span,
-h2 span {
-    display: none;
-}
-
-a {
-  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono';
   color: var(--white);
 }
 
 @font-face {
-  font-family: "Regular";
-  src: url(./poppins/Poppins-Regular.ttf);
+  font-family: 'IBM Plex Mono';
+  src: url(./font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
 }
 
-:root {
-  --black: #000000;
-  --white: #f0f0f0;
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url(./font/Instrument_Serif/InstrumentSerif-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  padding: 1rem;
+}
+
+header a span {
+  visibility: hidden;
+}
+
+header a:hover span {
+  visibility: visible;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Instrument Serif';
+}
+
+main div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 13px;
+  width: 100%;
+  max-width: 50vw;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.active {
+  text-decoration: line-through;
+}
+
+a:not(.active):hover {
+  opacity: 0.8;
+}
+
+@media all and (max-width: 732px) {
+  p {
+    max-width: 100vw;
+    padding: 2rem;
+  }
 }
