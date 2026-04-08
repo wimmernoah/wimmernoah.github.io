@@ -22,7 +22,12 @@
 
 body {
   margin: 0;
+  scrollbar-width: none;
   background: var(--black);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
