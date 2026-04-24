@@ -6,6 +6,7 @@
 
 * {
     user-select: none;
+    -webkit-user-select: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "IBM Plex Mono";
@@ -37,7 +38,7 @@ header {
 
 header a,
 footer a {
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 img {
@@ -95,11 +96,21 @@ h2 {
     color: var(--white);
 }
 
-p {
+p,
+li {
     font-size: 12px;
     width: 100%;
     color: var(--gray);
     text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 a {
