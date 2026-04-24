@@ -1,7 +1,7 @@
 :root {
     --black: #111111;
     --white: #eeeeee;
-    --gray: #aaaaaa;
+    --gray: #bbbbbb;
 }
 
 * {
@@ -9,7 +9,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "IBM Plex Mono";
-    color: var(--white);
 }
 
 @font-face {
@@ -23,7 +22,7 @@ body {
     background: var(--black);
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -33,15 +32,12 @@ header {
     justify-content: space-between;
     background: linear-gradient(to bottom, #111111 0%, transparent 100%);
     position: fixed;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-header a span {
-    visibility: hidden;
-}
-
-header a:hover span {
-    visibility: visible;
+header a,
+footer a {
+    padding: 5px;
 }
 
 img {
@@ -64,8 +60,6 @@ main {
 .section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 footer {
@@ -75,12 +69,13 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
 }
 
 h5 {
     margin: 0;
+    color: var(--gray);
 }
 
 .grid {
@@ -95,26 +90,22 @@ h5 {
     object-fit: cover;
 }
 
-h5,
 h3,
 h2 {
-    width: 100%;
+    color: var(--white);
 }
 
 p {
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     color: var(--gray);
     text-align: justify;
 }
 
-p a {
-    text-decoration: underline;
-}
-
 a {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
+    color: var(--white);
 }
 
 .active {
@@ -135,7 +126,7 @@ svg {
 
 path {
     fill: none;
-    stroke: #eeeeee;
+    stroke: var(--white);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
