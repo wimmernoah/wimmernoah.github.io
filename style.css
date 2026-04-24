@@ -1,6 +1,7 @@
 :root {
     --black: #111111;
     --white: #eeeeee;
+    --gray: #aaaaaa;
 }
 
 * {
@@ -103,7 +104,7 @@ h2 {
 p {
     font-size: 13px;
     width: 100%;
-    opacity: 0.8;
+    color: var(--gray);
     text-align: justify;
 }
 
