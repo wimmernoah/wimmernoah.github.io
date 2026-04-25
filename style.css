@@ -20,7 +20,7 @@
 body {
     margin: 0;
     scrollbar-width: none;
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #1a1a1a 0%, var(--black) 100%);
 }
 
 ::-webkit-scrollbar {
