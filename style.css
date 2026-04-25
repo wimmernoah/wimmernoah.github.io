@@ -125,7 +125,7 @@ a {
 
 #signature {
     width: 100%;
-    max-width: 400px;
+    max-width: 20rem;
     box-sizing: content-box;
     padding: 2rem;
     height: fit-content;
