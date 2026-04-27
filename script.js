@@ -11,15 +11,3 @@ function animate() {
 }
 
 animate();
-
-document.querySelectorAll(".grid img").forEach((img) => {
-  img.style.cursor = "zoom-in";
-  img.addEventListener("click", () => {
-    document.getElementById("lightbox-img").src = img.src;
-    document.getElementById("lightbox").classList.add("active");
-  });
-});
-
-document.getElementById("lightbox").addEventListener("click", () => {
-  document.getElementById("lightbox").classList.remove("active");
-});
