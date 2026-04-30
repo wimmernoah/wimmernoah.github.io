@@ -67,14 +67,14 @@ header {
 
 header a,
 footer a {
-    padding: 0.5rem;
+    padding: 5px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 4rem;
     width: 50vw;
     min-height: 100vh;
@@ -130,9 +130,8 @@ ul {
 /* Signature */
 #signature {
     box-sizing: content-box;
-    width: 100%;
     max-width: 20rem;
-    height: fit-content;
+    margin: 0 auto;
     padding: 2rem;
 }
 
