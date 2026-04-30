@@ -22,7 +22,7 @@ body {
     background: radial-gradient(ellipse at center, #222222 0%, var(--black) 100%);
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--gray);
 }
 
@@ -122,10 +122,6 @@ img {
 ul {
     list-style: none;
     padding: 0;
-}
-
-li {
-    margin-bottom: 0.5rem;
 }
 
 /* Signature */
