@@ -13,17 +13,30 @@
 
 html {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
     background: var(--black);
 }
 
 body {
     margin: 0;
     scrollbar-width: none;
-    background: radial-gradient(ellipse at center, #222222 0%, var(--black) 100%);
+    background: transparent;
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
     line-height: 1.5;
     color: var(--gray);
+}
+
+body::before {
+    -webkit-mask-image: radial-gradient(ellipse at center, transparent 0%, var(--black) 100%);
+    mask-image: radial-gradient(ellipse at center, transparent 0%, var(--black) 100%);
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(#aaaaaa10 1px, transparent 1px), linear-gradient(90deg, #aaaaaa10 1px, transparent 1px);
+    background-size: 10rem 10rem;
+    z-index: -1;
+    pointer-events: none;
 }
 
 body::-webkit-scrollbar {
