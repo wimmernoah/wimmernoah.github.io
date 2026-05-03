@@ -90,7 +90,6 @@ main {
     justify-content: start;
     gap: 4rem;
     width: 50vw;
-    min-height: 100vh;
     margin: auto;
     padding: 5rem 1rem;
 }
