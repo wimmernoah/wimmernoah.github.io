@@ -4,6 +4,11 @@
     --gray: #aaaaaa;
 }
 
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url(./font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+
 /* Base */
 * {
     box-sizing: border-box;
@@ -33,7 +38,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background-image: linear-gradient(#aaaaaa10 1px, transparent 1px), linear-gradient(90deg, #aaaaaa10 1px, transparent 1px);
+    background-image: linear-gradient(#aaaaaa20 1px, transparent 1px), linear-gradient(90deg, #aaaaaa20 1px, transparent 1px);
     background-size: 10rem 10rem;
     z-index: -1;
     pointer-events: none;
@@ -41,11 +46,6 @@ body::before {
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-@font-face {
-    font-family: "IBM Plex Mono";
-    src: url(./font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
 }
 
 /* Typography */
@@ -172,5 +172,8 @@ path {
 @media (max-width: 1024px) {
     main {
         width: 100vw;
+    }
+    body::before {
+        background-size: 8rem 8rem;
     }
 }
