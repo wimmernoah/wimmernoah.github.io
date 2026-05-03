@@ -13,13 +13,12 @@
 
 html {
     scroll-behavior: smooth;
-    background: var(--black);
+    background: radial-gradient(ellipse at center, #222222 0%, var(--black) 100%);
 }
 
 body {
     margin: 0;
     scrollbar-width: none;
-    background: radial-gradient(ellipse at center, #222222 0%, var(--black) 100%);
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
     line-height: 1.5;
@@ -143,7 +142,7 @@ svg {
 path {
     fill: none;
     stroke: var(--white);
-    stroke-width: 3;
+    stroke-width: 12;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
