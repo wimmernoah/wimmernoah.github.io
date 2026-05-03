@@ -142,7 +142,7 @@ svg {
 path {
     fill: none;
     stroke: var(--white);
-    stroke-width: 12;
+    stroke-width: 15;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
