@@ -40,7 +40,8 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: linear-gradient(#aaaaaa20 1px, transparent 1px), linear-gradient(90deg, #aaaaaa20 1px, transparent 1px);
-    background-size: 10rem 10rem;
+    background-size: 12vw 12vw;
+    background-position: center;
     z-index: -1;
     pointer-events: none;
 }
@@ -139,8 +140,7 @@ ul {
 
 /* Signature */
 #signature {
-    box-sizing: content-box;
-    max-width: 20rem;
+    max-width: 24rem;
     width: 100%;
     margin: auto;
     padding: 2rem;
@@ -171,6 +171,6 @@ path {
         width: 100vw;
     }
     body::before {
-        background-size: 8rem 8rem;
+        background-size: 24vw 24vw;
     }
 }
