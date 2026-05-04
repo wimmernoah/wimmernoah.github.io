@@ -13,6 +13,7 @@
 * {
     box-sizing: border-box;
     -webkit-user-select: none;
+    scrollbar-width: none;
     user-select: none;
 }
 
@@ -42,10 +43,6 @@ body::before {
     background-size: 10rem 10rem;
     z-index: -1;
     pointer-events: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 /* Typography */
