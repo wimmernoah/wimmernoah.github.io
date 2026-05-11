@@ -66,10 +66,8 @@ a {
     text-decoration: none;
 }
 
-br {
-    display: block;
-    content: "";
-    margin-top: 1rem;
+.space {
+    height: 1rem;
 }
 
 /* Layout */
